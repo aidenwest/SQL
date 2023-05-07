@@ -1,0 +1,33 @@
+-- Created film lab store database
+
+-- created the table
+CREATE TABLE film_lab (id integer, type text, name text, manufacturer text, price integer);
+
+-- insterted data into table
+INSERT INTO film_lab VALUES(1, 'C-41', 'Superia 400', 'Fujifilm', 25);
+INSERT INTO film_lab VALUES(2, 'C-41', 'FujiColor 100', 'Fujifilm', 20);
+INSERT INTO film_lab VALUES(3, 'C-41', 'Portra 160', 'Kodak', 5);
+INSERT INTO film_lab VALUES(4, 'C-41', 'Portra 400', 'Kodak', 10);
+INSERT INTO film_lab VALUES(1, 'C-41', 'Portra 800', 'Kodak', 15);
+INSERT INTO film_lab VALUES(5, 'C-41', 'ColorPlus 200', 'Kodak', 3);
+INSERT INTO film_lab VALUES(6, 'C-41', 'Gold 200	', 'Kodak', 2);
+INSERT INTO film_lab VALUES(7, 'C-41', 'Pro Image 100', 'Kodak', 1);
+INSERT INTO film_lab VALUES(8, 'C-41', 'Ultra Max 400', 'Kodak', 4);
+INSERT INTO film_lab VALUES(9, 'E-6', 'Ektachrome E100', 'Kodak', 100);
+INSERT INTO film_lab VALUES(10, 'E-6', 'Fujichrome Provia 100F', 'test', 122);
+INSERT INTO film_lab VALUES(11, 'B&W', 'Delta 3200', 'Ilford', 32);
+INSERT INTO film_lab VALUES(12, 'B&W', 'HP5 Plus', 'Ilford', 5);
+INSERT INTO film_lab VALUES(13, 'B&W', 'XP2 Super', 'Ilford', 7);
+INSERT INTO film_lab VALUES(14, 'B&W', 'Tri-X', 'Kodak', 12);
+INSERT INTO film_lab VALUES(15, 'B&W', 'Neopan ACROS 100 II', 'Fujifilm', 23);
+
+-- sorted the table by price
+SELECT*
+FROM film_lab
+ORDER BY price;
+
+-- calculated the average
+SELECT AVG(price)
+FROM film_lab;
+
+
